@@ -2,15 +2,18 @@ import React from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 function Nav() {
+    const  navstyle ={
+        color:'white'
+    }
   return (
     <nav>
       <h3>Logo</h3>
       <ul className="nav-links">
-        <Link>
+        <Link  style={navstyle} to="/about">
           <li>About</li>
         </Link>
-        <Link>
-          <li>Shop</li>
+        <Link to="/shop" style={navstyle}>
+          <li >Shop</li>
         </Link>
       </ul>
     </nav>
